@@ -144,6 +144,20 @@ https://cdn.jsdelivr.net/gh/USER/REPO@COMMIT_SHA/assets/PATH
 https://cdn.jsdelivr.net/gh/USER/REPO@v1.0.0/assets/PATH
 ```
 
+### Auto-Minification (JS/CSS only)
+
+jsDelivr automatically minifies JavaScript and CSS files on-the-fly. Just add `.min` before the extension:
+
+```
+# Original file
+https://cdn.jsdelivr.net/gh/USER/REPO@main/assets/js/example.js
+
+# Auto-minified version (no extra file needed!)
+https://cdn.jsdelivr.net/gh/USER/REPO@main/assets/js/example.min.js
+```
+
+> 💡 **You don't need to create separate `.min.js` files** — jsDelivr generates them automatically!
+
 ### Examples
 ```html
 <!-- CSS -->

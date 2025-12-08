@@ -1,6 +1,11 @@
 /**
  * CDN Assets - Example JavaScript
  * This file demonstrates the CDN structure
+ * 
+ * 💡 TIP: jsDelivr auto-minifies JS/CSS files!
+ *    Just add .min before the extension:
+ *    - example.js     → example.min.js (auto-minified)
+ *    - style.css      → style.min.css (auto-minified)
  */
 
 (function(global) {
@@ -47,10 +52,17 @@
      * @param {string} repo - Repository name
      * @param {string} path - Asset path
      * @param {string} version - Version/branch/commit
+     * @param {boolean} minified - Use auto-minified version
      * @returns {string}
      */
-    assetUrl: function(user, repo, path, version) {
+    assetUrl: function(user, repo, path, version, minified) {
       const base = this.getBaseUrl(user, repo, version);
+      
+      // Add .min before extension for auto-minification
+      if (minified && (path.endsWith('.js') || path.endsWith('.css'))) {
+        path = path.replace(/\.(js|css)$/, '.min.$1');
+      }
+      
       return `${base}/assets/${path}`;
     }
   };

@@ -4,7 +4,7 @@
   "description": "Public CDN assets repository for jsDelivr",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/cdn-assets"
+    "url": "https://github.com/JYamazian/cdn-assets"
   },
   "keywords": [
     "cdn",
