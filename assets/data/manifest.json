@@ -1,0 +1,16 @@
+{
+  "name": "cdn-assets",
+  "version": "1.0.0",
+  "description": "Public CDN assets repository for jsDelivr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/cdn-assets"
+  },
+  "keywords": [
+    "cdn",
+    "jsdelivr",
+    "assets",
+    "static"
+  ],
+  "license": "MIT"
+}
