@@ -1,0 +1,2 @@
+# cdn-assets
+CDN Assets
