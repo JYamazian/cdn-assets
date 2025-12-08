@@ -25,7 +25,7 @@ set -euo pipefail
 # =============================================================================
 # Configuration - EDIT THESE VALUES
 # =============================================================================
-GITHUB_USER="${CDN_GITHUB_USER:-YOUR_GITHUB_USERNAME}"
+GITHUB_USER="${CDN_GITHUB_USER:-JYamazian}"
 GITHUB_REPO="${CDN_GITHUB_REPO:-cdn-assets}"
 GITHUB_BRANCH="${CDN_GITHUB_BRANCH:-main}"
 ASSETS_DIR="${CDN_ASSETS_DIR:-./assets}"
