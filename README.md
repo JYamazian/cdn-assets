@@ -13,11 +13,14 @@ A **public** GitHub repository for hosting static assets via [jsDelivr CDN](http
 ```
 cdn-assets/
 ├── assets/
-│   ├── css/           # Stylesheets
-│   ├── js/            # JavaScript files
-│   ├── images/        # Images (png, jpg, svg, webp, etc.)
-│   └── data/          # JSON, XML, or other data files
+│   ├── css/           # Stylesheets (CSS files)
+│   ├── data/          # Data files (JSON, CSV, XML, etc.)
+│   ├── files/         # Downloadable files (ZIP, PDF, executables, etc.)
+│   ├── icons/         # Icon files (ICO, SVG, PNG icons)
+│   ├── images/        # Images (PNG, JPG, SVG, WebP, GIF, etc.)
+│   └── js/            # JavaScript files
 ├── publish-cdn.sh     # Automation script
+├── release.sh         # Github release creation script
 ├── .gitignore
 └── README.md
 ```
