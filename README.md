@@ -10,7 +10,7 @@ A **public** GitHub repository for hosting static assets via [jsDelivr CDN](http
 
 ## 📁 Directory Structure
 
-```
+```text
 cdn-assets/
 ├── assets/
 │   ├── css/           # Stylesheets (CSS files)
@@ -52,7 +52,7 @@ BRANCH="main"
 
 Place your files in the `assets/` directory:
 
-```bash
+```text
 assets/
 ├── css/style.css
 ├── js/app.js
@@ -85,7 +85,7 @@ The `publish-cdn.sh` script includes powerful automation features:
 
 ### Command Line Options
 
-```
+```text
 Options:
   -t, --tag VERSION    Create a git tag for versioned CDN URLs (e.g., v1.0.0)
   -m, --message MSG    Custom commit message
@@ -133,17 +133,20 @@ export CDN_ASSETS_DIR="./assets"
 ## 🔗 jsDelivr URL Format
 
 ### Latest Version (from main branch)
-```
+
+```text
 https://cdn.jsdelivr.net/gh/USER/REPO@BRANCH/assets/PATH
 ```
 
 ### Specific Commit (immutable, recommended for production)
-```
+
+```text
 https://cdn.jsdelivr.net/gh/USER/REPO@COMMIT_SHA/assets/PATH
 ```
 
 ### With Version Tags
-```
+
+```text
 https://cdn.jsdelivr.net/gh/USER/REPO@v1.0.0/assets/PATH
 ```
 
@@ -151,7 +154,7 @@ https://cdn.jsdelivr.net/gh/USER/REPO@v1.0.0/assets/PATH
 
 jsDelivr automatically minifies JavaScript and CSS files on-the-fly. Just add `.min` before the extension:
 
-```
+```text
 # Original file
 https://cdn.jsdelivr.net/gh/USER/REPO@main/assets/js/example.js
 
@@ -162,6 +165,7 @@ https://cdn.jsdelivr.net/gh/USER/REPO@main/assets/js/example.min.js
 > 💡 **You don't need to create separate `.min.js` files** — jsDelivr generates them automatically!
 
 ### Examples
+
 ```html
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/USER/cdn-assets@main/assets/css/style.css">
@@ -178,14 +182,17 @@ https://cdn.jsdelivr.net/gh/USER/REPO@main/assets/js/example.min.js
 ## ⚡ jsDelivr Features
 
 ### Minification (automatic)
+
 Append `.min` before the extension:
-```
+
+```text
 /assets/js/app.js      → /assets/js/app.min.js
 /assets/css/style.css  → /assets/css/style.min.css
 ```
 
 ### Combine Multiple Files
-```
+
+```text
 https://cdn.jsdelivr.net/combine/gh/USER/REPO@main/assets/js/file1.js,gh/USER/REPO@main/assets/js/file2.js
 ```
 
@@ -198,7 +205,8 @@ https://cdn.jsdelivr.net/combine/gh/USER/REPO@main/assets/js/file1.js,gh/USER/RE
 - **Tag URLs** (`@v1.0.0`): Cached permanently (immutable)
 
 ### Purge Cache Manually
-```
+
+```text
 https://purge.jsdelivr.net/gh/USER/REPO@BRANCH/assets/PATH
 ```
 
